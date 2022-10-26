@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Condicional encadeada</title>
+
+    <!-- JS -->
+    <script>
+        /*
+        && -> E
+        || -> OU
+        ! -> NEGAÇÂO
+        */
+        // Exemplo 01
+       document.write("True: "+ true +"<br>") 
+       document.write("Negação de True: "+!true+"<br>")
+
+        //Exemplo 02
+        var valor = 1000// Alterar o valor pra testar
+        var pag = "a vista"
+        if (valor>=1000 && pag== "a vista") {
+            document.write(" Com Desconto - Operador && "+"<br>")
+        } else {
+            document.write(" Sem Desconto  - Operador && "+"<br>")
+        }
+
+        if (valor>=1000 || pag== "a vista") {
+            document.write(" Com Desconto  - Operador || "+"<br>")
+        } else {
+            document.write(" Sem Desconto  - Operador || ")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>16 - Exercício Tabuada</title>
+    <!-- JS -->
+    <script>
+
+        var n1 = parseInt(prompt("Digite um número para gerar sua tabuada:"))
+
+        document.write("Tabuada do número " + n1 + "<br>")
+        document.write("Soma:" + "<br>")
+        for (var i = 0; i <= 10; i++) {
+            document.write(n1 + " + " + i + " = " + (n1 + i) + "<br>")
+        }
+
+        document.write("<br>")
+        document.write("Subtração:" + "<br>")
+        for (var i = 0; i <= 10; i++) {
+            document.write(n1 + " - " + i + " = " + (n1 - i) + "<br>")
+        }
+
+        document.write("<br>")
+        document.write("Divisão:" + "<br>")
+        for (var i = 0; i <= 10; i++) {
+            // Se resultado da divisão for == infinity, valor é zero, senão retorna o resultado da divisão
+            var result = (n1 / i) == Infinity ? 0 : (n1 / i)
+            document.write(n1 + " / " + i + " = " + (result.toPrecision(2)) + "<br>")
+        }
+
+        document.write("<br>")
+        document.write("Multiplicação:" + "<br>")
+        for (var i = 0; i <= 10; i++) {
+            document.write(n1 + " * " + i + " = " + (n1 * i) + "<br>")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

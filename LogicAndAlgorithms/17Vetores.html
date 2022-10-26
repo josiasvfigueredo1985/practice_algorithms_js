@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>17 - Vetores</title>
+    <!-- JS -->
+    <script>
+
+        var cores = ["Azul", "Verde", "Amarelo"]
+
+        //document.write(cores)
+        //console.log(cores)
+
+        // Informar info de uma posição do vetor
+        // document.write(cores[0])
+        // document.write(cores.length)
+
+        // Adicionar
+        cores.push("Vermelho")
+        //Alterar
+        cores[1] = "Rosa"
+        //Excluir de uma determinada posição
+        cores.splice(2, 1)
+
+        // Listar cores com for
+        for (var i = 0; i < cores.length; i++) {
+            document.write((i + 1) + "ª " + cores[i], "<br>")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

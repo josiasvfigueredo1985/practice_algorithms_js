@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>16 - Exercício Tabuada V2</title>
+    <!-- JS -->
+    <script>
+        var operacoes = ["Soma", "Subtração", "Divisão", "Multiplicação"]
+        var n1 = parseInt(prompt("Digite um número para gerar sua tabuada:"))
+        var n2 = parseInt(prompt("Selecione sua tabuada:" + "\n1 para Soma" + "\n2 para Subtração" + "\n3 para Divisão" + "\n4 para Multiplicação"))
+
+        document.write("Tabuada do número " + n1 + "<br>")
+
+        document.write(operacoes[n2-1] + "<br>")
+        switch (n2) {
+            case 1:
+                for (var i = 0; i <= 10; i++) {
+                    document.write(n1 + " + " + i + " = " + (n1 + i) + "<br>")
+                }
+                break;
+            case 2:
+                for (var i = 0; i <= 10; i++) {
+                    document.write(n1 + " - " + i + " = " + (n1 - i) + "<br>")
+                }
+                break;
+            case 3:
+                for (var i = 0; i <= 10; i++) {
+                    // Se resultado da divisão for == infinity, valor é zero, senão retorna o resultado da divisão
+                    var result = (n1 / i) == Infinity ? 0 : (n1 / i)
+                    document.write(n1 + " / " + i + " = " + (result.toPrecision(2)) + "<br>")
+                }
+                break;
+            case 4:
+                for (var i = 0; i <= 10; i++) {
+                    document.write(n1 + " * " + i + " = " + (n1 * i) + "<br>")
+                }
+                break;
+            default:
+                document.write("Opção Inválida")
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
